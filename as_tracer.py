@@ -68,7 +68,7 @@ def main():
         if ip_addresses[i]:
             print(i + 1, ip_addresses[i], request_ip_data(ip_addresses[i]))
         else:
-            print(i + 1, "Request timeout exceeded")
+            break
 
 
 if __name__ == "__main__":
