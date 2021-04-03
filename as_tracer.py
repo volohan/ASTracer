@@ -56,7 +56,7 @@ def main():
     # Получаем доменное имя или IP адрес от пользователя
     ip_name = input("Enter address: ")
     if not ip_name:
-        sys.exit("Пустой ввод")
+        sys.exit("Empty input")
 
     # Получаем маршрут
     route = get_route(ip_name)
@@ -68,7 +68,7 @@ def main():
         if ip_addresses[i]:
             print(i + 1, ip_addresses[i], request_ip_data(ip_addresses[i]))
         else:
-            print(i + 1, "Превышен интервал ожидания для запроса")
+            print(i + 1, "Request timeout exceeded")
 
 
 if __name__ == "__main__":
